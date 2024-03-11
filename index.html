@@ -6,7 +6,7 @@
     <title>Request&#x20;for&#x20;Credit&#x20;Limit</title>
     <link href="css/form.css" rel="stylesheet" type="text/css">
     <script src="js/validation.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
@@ -139,11 +139,11 @@
                             </li>
                         </div>
                         <!---------Email Ends Here---------->
-                         <button class="zf-submitColor">Submit</button>
+                        <button class="zf-submitColor">Submit</button>
                     </ul>
-                   
+
                 </div><!---------template Container Starts Here---------->
-              
+
             </div><!-- 'zf-templateWrapper' ends -->
         </form>
     </div><!-- 'zf-templateWidth' ends -->
@@ -152,6 +152,12 @@
         var zf_FieldArray = ["SingleLine", "SingleLine1", "Email", "Currency1", "SingleLine20", "Email3"];
         var isSalesIQIntegrationEnabled = false;
         var salesIQFieldsArray = [];</script>
+    <script>
+        window.addEventListener('message', function (event) {
+            var email = event.data;
+            document.getElementById('Email').value = email;
+        });
+    </script>
 </body>
 
 </html>
