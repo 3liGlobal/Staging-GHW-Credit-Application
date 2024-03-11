@@ -1542,6 +1542,7 @@ label {
   }
   .zf-templateWrapper {
     padding: 0px 10px 0 10px;
+    height: 1100px;
   }
 }
 @media (max-width: 420px) {
