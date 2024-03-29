@@ -1597,6 +1597,7 @@ label {
   height: 25px;
   animation: spin 2s linear infinite;
   margin-left: 10px;
+  display: none;
 }
 
 @keyframes spin {
