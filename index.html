@@ -152,7 +152,7 @@
         </form>
     </div><!-- 'zf-templateWidth' ends -->
     <script type="text/javascript">var zf_DateRegex = new RegExp("^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
-        var zf_MandArray = ["SingleLine","SingleLine1", "Email"];
+        var zf_MandArray = ["SingleLine", "SingleLine1", "Email"];
         var zf_FieldArray = ["SingleLine", "SingleLine1", "Email", "Currency1", "SingleLine20", "Email3"];
         var isSalesIQIntegrationEnabled = false;
         var salesIQFieldsArray = [];
@@ -173,6 +173,17 @@
             $('#loader').hide();
         });
     </script>
+
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".zf-submitColor");
+            button.addEventListener("click", function () {
+                // Disable the button
+                this.disabled = true;
+            });
+        });
+    </script>
+
 
 </body>
 
